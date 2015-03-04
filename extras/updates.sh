@@ -24,5 +24,5 @@ cherries+=(CM_90225)
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
-    ${android}/vendor/lx/extras/repopick.py -b ${cherries[@]}
+    ${android}/vendor/LegacyXperiaAOSP/extras/repopick.py -b ${cherries[@]}
 fi

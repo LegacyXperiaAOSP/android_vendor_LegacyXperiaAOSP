@@ -2,7 +2,7 @@
 $(call inherit-product-if-exists, device/semc/haida/full_haida.mk)
 
 # Inherit common device configuration for LegacyXperiaAOSP Project 
-$(call inherit-product, vendor/PolishBlood/common_lx.mk)
+$(call inherit-product, vendor/LegacyXperiaAOSP/common_LegacyXperiaAOSP.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := LegacyXperiaAOSP_haida
