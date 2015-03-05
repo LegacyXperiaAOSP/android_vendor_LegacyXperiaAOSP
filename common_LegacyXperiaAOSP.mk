@@ -1,7 +1,7 @@
 # user, just user
 # USER := 
 # Version
-LX_VERSION_NUMBER := alpha1
+LX_VERSION := alpha1
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
