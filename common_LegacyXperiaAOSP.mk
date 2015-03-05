@@ -3,6 +3,8 @@
 # Version
 LX_VERSION_NUMBER := alpha1
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegadec \
