@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
     mkfs.exfat 
 
 PRODUCT_COPY_FILES += \
-	vendor/lx/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+	vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Updater app
 
