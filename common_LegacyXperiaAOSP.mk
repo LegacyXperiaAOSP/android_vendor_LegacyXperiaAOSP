@@ -7,7 +7,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
 # Extra packages 
 PRODUCT_PACKAGES += \
-	Lanucher3
+	Lanucher3  \
+	AudioFX
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
