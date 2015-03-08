@@ -24,6 +24,9 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat 
+   
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.sys.force_highendgfx=true
 
 PRODUCT_COPY_FILES += \
 	vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
