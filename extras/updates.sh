@@ -18,9 +18,6 @@ cherries+=(CM_79136)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
-# mmc: msm_sdcc: Fix wl12xx error "watchdog interrupt received"
-cherries+=(LX_124)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
