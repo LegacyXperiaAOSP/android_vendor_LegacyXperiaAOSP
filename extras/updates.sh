@@ -18,6 +18,12 @@ cherries+=(CM_79136)
 # vold: add ro.vold.umsdirtyratio property
 cherries+=(CM_88635)
 
+# Import updated yaffs2 driver
+cherries+=(LX_13)
+
+# Revert "msm7x30: Set max background services to 4"
+cherries+=(LX_213)
+
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
