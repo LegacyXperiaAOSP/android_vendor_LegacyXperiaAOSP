@@ -8,4 +8,6 @@ add_lunch_combo LegacyXperiaAOSP_phoenix-userdebug
 add_lunch_combo LegacyXperiaAOSP_satsuma-userdebug
 add_lunch_combo LegacyXperiaAOSP_smultron-userdebug
 add_lunch_combo LegacyXperiaAOSP_urushi-userdebug
+add_lunch_combo LegacyXperiaAOSP_zeus-userdebug
+
               
