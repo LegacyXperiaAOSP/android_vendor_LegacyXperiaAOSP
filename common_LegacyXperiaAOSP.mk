@@ -24,7 +24,10 @@ PRODUCT_PACKAGES += \
     tune2fs \
     mount.exfat \
     fsck.exfat \
-    mkfs.exfat 
+    mkfs.exfat \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
    
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.sys.force_highendgfx=true
