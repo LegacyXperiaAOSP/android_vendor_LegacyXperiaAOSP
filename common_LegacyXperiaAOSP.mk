@@ -1,14 +1,11 @@
-# user, just user
-# USER := 
-# Version
-LX_VERSION := alpha1
-
 PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
 # Extra packages 
 PRODUCT_PACKAGES += \
-	Lanucher3  \
-	AudioFX
+    Launcher3 \
+    AudioFX \
+    SoundRecorder \
+    Stk \
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
@@ -16,7 +13,7 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
     libnamparser
-    
+
 # Extra tools 
 PRODUCT_PACKAGES += \
     e2fsck \
@@ -27,13 +24,10 @@ PRODUCT_PACKAGES += \
     mkfs.exfat \
     mkfs.f2fs \
     fsck.f2fs \
-    fibmap.f2fs \
-   
-PRODUCT_PROPERTY_OVERRIDES += \
-        persist.sys.force_highendgfx=true
+    fibmap.f2fs
 
+# World APN list
 PRODUCT_COPY_FILES += \
-	vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Updater app
-
+$(call prepend-product-if-exists, vendor/extra/product.mk)
