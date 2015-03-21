@@ -12,17 +12,8 @@ if [ -f ${android}/updates-local.sh ]; then
     source ${android}/updates-local.sh
 fi
 
-# Revert "Revert "Reenable support for non-PIE executables""
-cherries+=(CM_79136)
-
-# vold: add ro.vold.umsdirtyratio property
-cherries+=(CM_88635)
-
-# Import updated yaffs2 driver
-cherries+=(LX_13)
-
 if [ -z $cherries ]; then
     echo -e "Nothing to cherry-pick!"
 else
-    ${android}/vendor/LegacyXperiaAOSP/extras/repopick.py -b ${cherries[@]}
+    ${android}/build/tools/repopick.py -b ${cherries[@]}
 fi
