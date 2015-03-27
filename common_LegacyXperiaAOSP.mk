@@ -30,4 +30,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Boot animation 
+PRODUCT_COPY_FILES += \
+    vendor/LegacyXperiaAOSP/prebuilt/bootanimation/$(TARGET_SCREEN_WIDTH)x$(TARGET_SCREEN_HEIGHT).zip:system/media/bootanimation.zip
+
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
