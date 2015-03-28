@@ -1,5 +1,11 @@
 PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
+# Version
+LX_VERSION := Beta 1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lxaosp.version=$(LX_VERSION)
+
 # Extra packages 
 PRODUCT_PACKAGES += \
     Launcher3 \
