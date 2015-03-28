@@ -7,6 +7,18 @@ fi
 
 android="${PWD}"
 
+# Add LegacyXperiaAOSP DeviceSettings
+cherries+=(LX_252)
+
+# msm7x30-common: Enable BOARD_EGL_WORKAROUND_BUG_10194508 flag
+cherries+=(LX_259)
+
+# audio/msm7x30: Fix compilation for 5.1
+cherries+=(LX_290)
+
+# audio: Make getPresentationPosition pure virtual
+cherries+=(CM_92381)
+
 # Add local cherries if they exist
 if [ -f ${android}/updates-local.sh ]; then
     source ${android}/updates-local.sh
