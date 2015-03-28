@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Extra packages 
 PRODUCT_PACKAGES += \
+    DeviceSettings \ 
     Launcher3 \
     AudioFX \
     SoundRecorder \
