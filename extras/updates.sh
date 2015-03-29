@@ -19,6 +19,9 @@ cherries+=(LX_290)
 # audio: Make getPresentationPosition pure virtual
 cherries+=(CM_92381)
 
+# fix AudioPolicyManager assert when making a call
+cherries+=(LX_296)
+
 # Add local cherries if they exist
 if [ -f ${android}/updates-local.sh ]; then
     source ${android}/updates-local.sh
