@@ -1,18 +1,18 @@
 PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
 # Version
-LX_VERSION := Beta 1
+LX_VERSION := Beta 2
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lxaosp.version=$(LX_VERSION)
 
-# Extra packages 
+# Extra packages
 PRODUCT_PACKAGES += \
-    DeviceSettings \ 
+    DeviceSettings \
     Launcher3 \
     AudioFX \
     SoundRecorder \
-    Stk \
+    Stk
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
     libFFmpegExtractor \
     libnamparser
 
-# Extra tools 
+# Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
@@ -37,9 +37,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/LegacyXperiaAOSP/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Boot animation 
+# Boot animation
 PRODUCT_COPY_FILES += \
     vendor/LegacyXperiaAOSP/prebuilt/bootanimation/$(TARGET_SCREEN_WIDTH)x$(TARGET_SCREEN_HEIGHT).zip:system/media/bootanimation.zip
-
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
