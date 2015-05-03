@@ -1,7 +1,7 @@
 PRODUCT_PACKAGE_OVERLAYS += vendor/LegacyXperiaAOSP/overlay/common
 
 # Version
-LX_VERSION := Beta 2
+LX_VERSION := Beta_2
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lxaosp.version=$(LX_VERSION)
